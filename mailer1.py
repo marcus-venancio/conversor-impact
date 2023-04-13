@@ -22,8 +22,8 @@ for cliente_afetado in clientes_afetados:
         mensagem = MIMEMultipart()
         mensagem['From'] = 'seu-email@dominio.com'
         mensagem['To'] = ', '.join(emails_destino)
-        mensagem['Subject'] = 'Manutenção programada para ' + nome_empresa
-        corpo_mensagem = 'Prezado(a) ' + cliente_afetado + ',\n\nGostaríamos de informar que haverá uma manutenção programada na rede de nossa empresa no dia ' + data_manutencao + '.\n\nPedimos desculpas por qualquer inconveniente que isso possa causar e estamos à disposição para esclarecer quaisquer dúvidas que possam surgir.\n\nAtenciosamente,\n\nEquipe de suporte técnico'
+        mensagem['Subject'] = 'Aviso de manutenção programada para ' + nome_empresa + ' que afetará seus circuitos.'
+        corpo_mensagem = 'Prezado(a) ' + cliente_afetado + ',\n\nGostaríamos de informar que iremos realizar uma manutenção programada em nossa rede no dia ' + data_manutencao + ' o que afetará os circuitos que você utiliza em nosso serviço. O objetivo dessa manutenção é melhorar a qualidade e a estabilidade da nossa rede, garantindo que possamos continuar a oferecer um serviço de alta qualidade.\n\nPedimos desculpas por qualquer inconveniente que isso possa causar e estamos à disposição para esclarecer quaisquer dúvidas que possam surgir.\n\nAtenciosamente,\n\nEquipe de suporte técnico'
         mensagem.attach(MIMEText(corpo_mensagem, 'plain'))
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()

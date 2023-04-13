@@ -2,6 +2,7 @@ import pandas as pd
 
 df = pd.read_excel('impacto analises.xlsx')
 clientes_afetados = df.iloc[0:, 10].unique()
+circuito = df.iloc[0:, 9].unique()
 
 contatos = pd.read_excel('Contactos CIP Remedy.xlsx')
 grupos_correspondentes = contatos.loc[contatos['LAST_NAME'].isin(clientes_afetados)].groupby('LAST_NAME')
