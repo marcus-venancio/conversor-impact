@@ -16,4 +16,5 @@ for cliente_afetado in clientes_afetados:
 dados = {'Cliente afetado': clientes_afetados, 'E-mails de contato': emails}
 resultado = pd.DataFrame(dados)
 
+# resultado.to_excel('Resultado da Conversão.xlsx', index=False)
 print(resultado)
