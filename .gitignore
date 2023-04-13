@@ -1,0 +1,14 @@
+> #pwd is the repo   
+> tree -a
+.
+├── .git
+│   |.....
+├── .gitignore
+├── README.md
+├── f1.html
+├── f2.html ... and some more html
+├── images
+│   └── river.jpg
+>
+Contactos CIP Remedy.xlsx
+impacto analises.xlsx
