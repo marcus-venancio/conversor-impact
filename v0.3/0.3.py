@@ -33,4 +33,4 @@ dados = {'Clientes afetados': clientes_afetados, 'Circuito': circuito,
 resultado = pd.DataFrame(dados)
 
 resultado.to_excel('Resultado2.xlsx', index=False)
-# print(resultado)
+print(resultado)
