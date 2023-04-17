@@ -32,5 +32,5 @@ dados = {'Clientes afetados': clientes_afetados, 'Circuito': circuito,
          'Morada do Cliente': morada_cliente, 'E-mails de contato': emails}
 resultado = pd.DataFrame(dados)
 
-resultado.to_excel('Resultado2.xlsx', index=False)
+# resultado.to_excel('Resultado2.xlsx', index=False)
 print(resultado)
